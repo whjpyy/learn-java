@@ -1,0 +1,24 @@
+package com.chen.learn.create.builder;
+
+/**
+ * 菜单生成
+ *
+ * @author chenyouzeng
+ * @date 2019/11/29
+ */
+public class MealBuilder {
+
+    public Meal prepareVegMeal(){
+        Meal meal = new Meal();
+        meal.addItem(new VegBurger());
+        meal.addItem(new Coke());
+        return meal;
+    }
+
+    public Meal prepareNonVegMeal(){
+        Meal meal = new Meal();
+        meal.addItem(new ChickenBurger());
+        meal.addItem(new Pepsi());
+        return meal;
+    }
+}
